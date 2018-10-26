@@ -1,0 +1,56 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.30.0.
+--
+-- see: https://github.com/sol/hpack
+--
+-- hash: 739b974ad96d25f1c0920d7188f4887e4d559692f6de1b85c803726585acc6e6
+
+name:           frelude
+version:        0.1.0.0
+description:    Please see the README on GitHub at <https://github.com/fredefox/frelude#readme>
+homepage:       https://github.com/fredefox/frelude#readme
+bug-reports:    https://github.com/fredefox/frelude/issues
+author:         Frederik Hangøj Iversen
+maintainer:     fhi.1990@gmail.com
+copyright:      2018 Frederik Hangøj Iversen
+license:        BSD3
+license-file:   LICENSE
+build-type:     Simple
+extra-source-files:
+    README.md
+    CHANGELOG.md
+
+source-repository head
+  type: git
+  location: https://github.com/fredefox/frelude
+
+library
+  exposed-modules:
+      Frelude
+  other-modules:
+      Frelude.ReExports
+      Frelude.Renamed
+  hs-source-dirs:
+      src
+  default-extensions: ConstraintKinds DeriveGeneric FlexibleContexts FlexibleInstances GADTs GeneralizedNewtypeDeriving LambdaCase NamedWildCards OverloadedStrings ScopedTypeVariables StandaloneDeriving TupleSections TypeApplications TypeFamilies TypeSynonymInstances UnicodeSyntax ViewPatterns DerivingStrategies EmptyCase NoImplicitPrelude
+  build-depends:
+      aeson
+    , base >=4.7 && <5
+    , binary
+    , bytestring
+    , containers
+    , deepseq
+    , directory
+    , exceptions
+    , file-embed
+    , mtl
+    , optparse-applicative
+    , prettyprinter
+    , string-conversions
+    , template-haskell
+    , text
+    , time
+    , unordered-containers
+    , yaml
+  default-language: Haskell2010
