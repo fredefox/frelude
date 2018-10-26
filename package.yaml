@@ -1,0 +1,67 @@
+name:                frelude
+version:             0.1.0.0
+github:              fredefox/frelude
+license:             BSD3
+license-file:        LICENSE
+author:              Frederik Hangøj Iversen
+maintainer:          fhi.1990@gmail.com
+copyright:           2018 Frederik Hangøj Iversen
+
+extra-source-files:
+- README.md
+- CHANGELOG.md
+
+description:
+  Please see the README on GitHub at <https://github.com/fredefox/frelude#readme>
+
+default-extensions:
+  - ConstraintKinds
+  - DeriveGeneric
+  - FlexibleContexts
+  - FlexibleInstances
+  - GADTs
+  - GeneralizedNewtypeDeriving
+  - LambdaCase
+  - NamedWildCards
+  - OverloadedStrings
+  - ScopedTypeVariables
+  - StandaloneDeriving
+  - TupleSections
+  - TypeApplications
+  - TypeFamilies
+  - TypeSynonymInstances
+  - UnicodeSyntax
+  - ViewPatterns
+  - DerivingStrategies
+  - EmptyCase
+  - NoImplicitPrelude
+
+dependencies:
+  - base >= 4.7 && < 5
+  - mtl
+  - text
+  - containers
+  - unordered-containers
+  - aeson
+  - yaml
+  - prettyprinter
+  - file-embed
+  - directory
+  - bytestring
+  - exceptions
+  - string-conversions
+  - optparse-applicative
+  - template-haskell
+  - time
+  - deepseq
+  - binary
+
+library:
+  source-dirs: src
+
+  exposed-module:
+    - Frelude
+
+  other-modules:
+    - Frelude.ReExports
+    - Frelude.Renamed
