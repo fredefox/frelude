@@ -1,5 +1,3 @@
--- | A module re-exporting members commonly used throughout the MUSTE.
-
 {-# OPTIONS_GHC -Wall -Wcompat #-}
 
 module Frelude.ReExports (module X) where
