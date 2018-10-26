@@ -59,7 +59,7 @@ dependencies:
 library:
   source-dirs: src
 
-  exposed-module:
+  exposed-modules:
     - Frelude
 
   other-modules:
